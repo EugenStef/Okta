@@ -47,7 +47,7 @@ oktaSignIn.renderEl(
 
 function myFunction() {
    oktaSignIn.signOut(function () {
-window.location.href='index.html';
+window.location.href='/index.html';
 
     });
 }
