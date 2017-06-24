@@ -7,7 +7,7 @@ var redirectUrl = 'http://eugenstef.github.io/Okta-widget/loggedin.htm';
 // var oktaSignIn = new OktaSignIn({baseUrl: orgUrl});
 var oktaSignIn = new OktaSignIn({
     baseUrl: orgUrl,
-    logo: '/sysnopsyslogo.png',
+  //  logo: '/sysnopsyslogo.png',
 
     features: {
         rememberMe: true,
