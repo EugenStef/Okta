@@ -27,7 +27,7 @@ var oktaSignIn = new OktaSignIn({
 
     // See the contents of the 'okta-theme.css' file for a full list of labels.
     labels: {
-        'primaryauth.title': 'Sysnopsys Partner Login',
+        'primaryauth.title': 'Widget Testing',
         'primaryauth.username': 'Username',
         'primaryauth.username.tooltip': 'Enter your email ID',
         'primaryauth.password': 'Password',
