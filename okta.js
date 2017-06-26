@@ -3,7 +3,7 @@
 
 
     var orgUrl = 'https://atelier.oktapreview.com';
-var redirectUrl = 'https://eugenstef.github.io/Okta-widget/loggedin.html';
+var redirectUrl = 'https://eu-gen.github.io/Okta-widget/loggedin.html';
 // var oktaSignIn = new OktaSignIn({baseUrl: orgUrl});
 var oktaSignIn = new OktaSignIn({
     baseUrl: orgUrl,
