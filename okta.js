@@ -3,7 +3,7 @@
 
 
     var orgUrl = 'https://atelier.oktapreview.com';
-var redirectUrl = 'https://eu-gen.github.io/Okta-widget/loggedin.html';
+var redirectUrl = 'https://eu-gen.github.io/widget/loggedin.html';
 // var oktaSignIn = new OktaSignIn({baseUrl: orgUrl});
 var oktaSignIn = new OktaSignIn({
     baseUrl: orgUrl,
@@ -47,7 +47,7 @@ oktaSignIn.renderEl(
 
 function myFunction() {
    oktaSignIn.signOut(function () {
-window.location.href='/Okta-widget/index.html';
+window.location.href='/widget/index.html';
 
     });
 }
