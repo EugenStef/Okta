@@ -19,7 +19,6 @@ var oktaSignIn = new OktaSignIn({
 			selfServiceUnlock: true
 		},
         
-    },
 
     /* helpLinks: {
         help: 'http://acme.example.com/custom/help/page',
