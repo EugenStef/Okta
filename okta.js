@@ -10,9 +10,15 @@ var oktaSignIn = new OktaSignIn({
   //  logo: '/sysnopsyslogo.png',
 
     features: {
-        rememberMe: true,
-        smsRecovery: false,
-        selfServiceUnlock: false
+			rememberMe: true,
+			smsRecovery: true,
+            multiOptionalFactorEnroll: true,
+            autoPush: true,
+            callRecovery: true,
+            windowsVerify: true,
+			selfServiceUnlock: true
+		},
+        
     },
 
     /* helpLinks: {
