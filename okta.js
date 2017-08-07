@@ -13,19 +13,27 @@ var oktaSignIn = new OktaSignIn({
     baseUrl: orgUrl,
     logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Oldacmelogo.png/200px-Oldacmelogo.png',
     features: {
-			rememberMe: true,
-			smsRecovery: true,
-      multiOptionalFactorEnroll: true,
-      autoPush: true,
-      callRecovery: true,
-      windowsVerify: true,
-			selfServiceUnlock: true
+             rememberMe: true,
+             smsRecovery: true,
+             multiOptionalFactorEnroll: true,
+             autoPush: true,
+             callRecovery: true,
+             windowsVerify: true,
+	     selfServiceUnlock: true
 		},
     idps: [{
       type: 'FACEBOOK',
       id: '{{facebook appId}}'
     }],
-    language: 'nl-NL',
+   // language: 'nl-NL',
+	language: function (supportedLanguages, userLanguages) {
+  // supportedLanguages is an array of languageCodes, i.e.:
+  // ['cs', 'da', ...]
+  //
+  // userLanguages is an array of languageCodes that come from the user's
+  // browser preferences
+  return supportedLanguages[0];
+},
     helpLinks: {
         help: 'http://acme.example.com/custom/help/page',
         forgotPassword: 'http://acme.example.com/custom/forgot/pass/page',
