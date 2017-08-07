@@ -25,7 +25,7 @@ var oktaSignIn = new OktaSignIn({
   // userLanguages is an array of languageCodes that come from the user's
   // browser preferences
   return supportedLanguages[0];
-},
+}
 
     /* helpLinks: {
         help: 'http://acme.example.com/custom/help/page',
@@ -44,7 +44,7 @@ var oktaSignIn = new OktaSignIn({
         'primaryauth.username.tooltip': 'Enter your email ID',
         'primaryauth.password': 'Password',
         'primaryauth.password.tooltip': 'Enter your secret password'
-},
+}
 
 oktaSignIn.renderEl(
   { el: '#okta-login-container' },
