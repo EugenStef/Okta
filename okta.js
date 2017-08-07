@@ -25,7 +25,7 @@ var oktaSignIn = new OktaSignIn({
       type: 'FACEBOOK',
       id: '{{facebook appId}}'
     }],
-    language: 'ja',
+    language: 'nl-NL',
     helpLinks: {
         help: 'http://acme.example.com/custom/help/page',
         forgotPassword: 'http://acme.example.com/custom/forgot/pass/page',
