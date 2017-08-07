@@ -29,7 +29,7 @@ var oktaSignIn = new OktaSignIn({
 	language: function (supportedLanguages, userLanguages) {
   // supportedLanguages is an array of languageCodes, i.e.:
   // ['cs', 'da', ...]
-		supportedLanguages: {'en', 'cs', 'ro'}
+		supportedLanguages: ['en', 'cs', 'ro']
   //
   // userLanguages is an array of languageCodes that come from the user's
   // browser preferences
