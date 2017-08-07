@@ -2,7 +2,7 @@
 
 
 
-    var orgUrl = 'https://atelier.oktapreview.com';
+var orgUrl = 'https://atelier.oktapreview.com';
 var redirectUrl = 'https://eu-gen.github.io/widget/loggedin.html';
 // var oktaSignIn = new OktaSignIn({baseUrl: orgUrl});
 var oktaSignIn = new OktaSignIn({
@@ -45,6 +45,7 @@ language: 'ja'
         'primaryauth.password': 'Password',
         'primaryauth.password.tooltip': 'Enter your secret password'
 }
+});
 
 oktaSignIn.renderEl(
   { el: '#okta-login-container' },
