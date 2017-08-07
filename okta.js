@@ -11,7 +11,7 @@ var redirectUrl = 'https://eu-gen.github.io/widget/loggedin.html';
 // var oktaSignIn = new OktaSignIn({baseUrl: orgUrl});
 var oktaSignIn = new OktaSignIn({
     baseUrl: orgUrl,
-    logo: '/sysnopsyslogo.png',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Oldacmelogo.png/200px-Oldacmelogo.png',
     features: {
 			rememberMe: true,
 			smsRecovery: true,
