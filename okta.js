@@ -18,15 +18,15 @@ var oktaSignIn = new OktaSignIn({
             windowsVerify: true,
 			selfServiceUnlock: true
 		},
-        language: function (supportedLanguages, userLanguages) {
-  // supportedLanguages is an array of languageCodes, i.e.:
-  // ['cs', 'da', ...]
-  //
-  // userLanguages is an array of languageCodes that come from the user's
-  // browser preferences
-  return supportedLanguages[0];
-}
+idps: [
+    {
+      type: 'FACEBOOK',
+      id: '{{facebook appId}}'
+    }
+  ]
+});
 
+language: 'ja'
     /* helpLinks: {
         help: 'http://acme.example.com/custom/help/page',
         forgotPassword: 'http://acme.example.com/custom/forgot/pass/page',
