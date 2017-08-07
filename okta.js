@@ -2,32 +2,31 @@
 
 
 
+// JavaScript source code
+
+
+
 var orgUrl = 'https://atelier.oktapreview.com';
 var redirectUrl = 'https://eu-gen.github.io/widget/loggedin.html';
 // var oktaSignIn = new OktaSignIn({baseUrl: orgUrl});
 var oktaSignIn = new OktaSignIn({
     baseUrl: orgUrl,
-  //  logo: '/sysnopsyslogo.png',
-
+    logo: '/sysnopsyslogo.png',
     features: {
 			rememberMe: true,
 			smsRecovery: true,
-            multiOptionalFactorEnroll: true,
-            autoPush: true,
-            callRecovery: true,
-            windowsVerify: true,
+      multiOptionalFactorEnroll: true,
+      autoPush: true,
+      callRecovery: true,
+      windowsVerify: true,
 			selfServiceUnlock: true
 		},
-idps: [
-    {
+    idps: [{
       type: 'FACEBOOK',
       id: '{{facebook appId}}'
-    }
-  ]
-});
-
-language: 'ja'
-    /* helpLinks: {
+    }],
+    language: 'ja',
+    helpLinks: {
         help: 'http://acme.example.com/custom/help/page',
         forgotPassword: 'http://acme.example.com/custom/forgot/pass/page',
         unlock: 'http://acme.example.com/custom/unlock/page',
@@ -36,17 +35,14 @@ language: 'ja'
           { text: 'Rocket Sled Questions', href: 'http://acme.example.com/questions/rocket-sled' }
         ]
     }, */
-
-    // See the contents of the 'okta-theme.css' file for a full list of labels.
+// See the contents of the 'okta-theme.css' file for a full list of labels.
     labels: {
         'primaryauth.title': 'Widget Testing',
         'primaryauth.username': 'Username',
         'primaryauth.username.tooltip': 'Enter your email ID',
         'primaryauth.password': 'Password',
-        'primaryauth.password.tooltip': 'Enter your secret password'
-}
+        'primaryauth.password.tooltip': 'Enter your secret password'}
 });
-
 oktaSignIn.renderEl(
   { el: '#okta-login-container' },
   function (res) {
