@@ -45,7 +45,7 @@ var oktaSignIn = new OktaSignIn({
         'primaryauth.password': 'Password',
         'primaryauth.password.tooltip': 'Enter your secret password'
     }
-});
+};
 
 oktaSignIn.renderEl(
   { el: '#okta-login-container' },
