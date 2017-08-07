@@ -34,7 +34,7 @@ var oktaSignIn = new OktaSignIn({
           { text: 'Dehydrated Boulders Support', href: 'http://acme.example.com/support/dehydrated-boulders' },
           { text: 'Rocket Sled Questions', href: 'http://acme.example.com/questions/rocket-sled' }
         ]
-    }, */
+    },
 // See the contents of the 'okta-theme.css' file for a full list of labels.
     labels: {
         'primaryauth.title': 'Widget Testing',
