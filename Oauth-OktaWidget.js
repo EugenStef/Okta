@@ -1,6 +1,6 @@
  let oktaSignIn = new OktaSignIn({
           baseUrl: 'https://atelier.oktapreview.com',
-          clientId: cid,
+          clientId: '0oabojju8uq9Acder0h7',
           logo: '/images/logo.png',
           language: 'en',
           redirectUri: 'https://empire.gov/auth-code',
