@@ -67,7 +67,8 @@ oktaSignIn.renderEl(
 	if (res.type === 'SESSION_STEP_UP' && res.stepUp) {
           console.log('Target resource url: ' + res.stepUp.url);
           res.stepUp.finish();
-          return;
+		res.session.setCookieAndRedirect();
+          //return;
         }
   });
 
