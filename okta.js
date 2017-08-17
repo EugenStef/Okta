@@ -71,7 +71,7 @@ oktaSignIn.renderEl(
           res.session.setCookieAndRedirect(redirectUrl);
 }
  
-
+	  }
   });
 
 function myFunction() {
