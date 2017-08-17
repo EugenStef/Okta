@@ -63,13 +63,13 @@ oktaSignIn.renderEl(
           console.log('User %s successfully authenticated %o', res.user.profile.login, res.user);
           res.session.setCookieAndRedirect(redirectUrl);
       }
-  }
+ 
 	if (res.type === 'SESSION_STEP_UP' && res.stepUp) {
           console.log('Target resource url: ' + res.stepUp.url);
           res.stepUp.finish();
           return;
         }
-);
+  });
 
 function myFunction() {
    oktaSignIn.signOut(function () {
