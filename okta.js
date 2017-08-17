@@ -59,16 +59,19 @@ var oktaSignIn = new OktaSignIn({
 oktaSignIn.renderEl(
   { el: '#okta-login-container' },
   function (res) {
-      if (res.status === 'SUCCESS') {
-          console.log('User %s successfully authenticated %o', res.user.profile.login, res.user);
-          res.session.setCookieAndRedirect(redirectUrl);
-      }
- 
-	if (res.type === 'SESSION_STEP_UP' && res.stepUp) {
+      if (res.type === 'SESSION_STEP_UP' && res.stepUp) {
           console.log('Target resource url: ' + res.stepUp.url);
           res.stepUp.finish();
 	  return;
-        }
+      }
+	  else 
+	  { 
+     if (res.status === 'SUCCESS') {
+          console.log('User %s successfully authenticated %o', res.user.profile.login, res.user);
+          res.session.setCookieAndRedirect(redirectUrl);
+}
+ 
+
   });
 
 function myFunction() {
