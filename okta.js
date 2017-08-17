@@ -1,9 +1,3 @@
-// JavaScript source code
-
-
-
-// JavaScript source code
-
    var stateToken = "";
     var stateTokenParam = /stateToken=([\w-_]*)&*/.exec(window.location.search);
     if (stateTokenParam && stateTokenParam.length >= 2) {
@@ -17,7 +11,7 @@ var redirectUrl = 'https://eu-gen.github.io/widget/loggedin.html';
 var oktaSignIn = new OktaSignIn({
     baseUrl: orgUrl,
     logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Oldacmelogo.png/200px-Oldacmelogo.png',
-    stateToken: 'stateToken',
+    stateToken: stateToken,
     features: {
              rememberMe: true,
              smsRecovery: true,
@@ -25,11 +19,11 @@ var oktaSignIn = new OktaSignIn({
              autoPush: true,
              callRecovery: true,
              windowsVerify: true,
-	     selfServiceUnlock: true,
-	    multiOptionalFactorEnroll:true,
-	    securityImage:false,
-	    hideSignOutLinkInMFA:true
-		},
+	           selfServiceUnlock: true,
+	           multiOptionalFactorEnroll:true,
+	           securityImage:false,
+	           hideSignOutLinkInMFA:true
+		        },
 	
     idps: [{
       type: 'FACEBOOK',
