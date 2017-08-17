@@ -62,7 +62,8 @@ oktaSignIn.renderEl(
       if (res.type === 'SESSION_STEP_UP' && res.stepUp) {
           console.log('Target resource url: ' + res.stepUp.url);
           res.stepUp.finish();
-	  res.session.setCookieAndReturn;
+	  res.session.setCookie;
+	      Return;
       }
 	  else if (res.status === 'SUCCESS') {
           console.log('User %s successfully authenticated %o', res.user.profile.login, res.user);
