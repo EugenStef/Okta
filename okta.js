@@ -6,7 +6,7 @@
     }
 
 var orgUrl = 'https://mondiru.okta.com';
-//var redirectUrl = 'https://mondiru-dev-ed.my.salesforce.com/';
+var redirectUrl = 'https://mondiru.okta.com/home/salesforce/0oa1p0k9oeLmfWdRx1t7/46';
 // var oktaSignIn = new OktaSignIn({baseUrl: orgUrl});
 var oktaSignIn = new OktaSignIn({
     baseUrl: orgUrl,
@@ -62,7 +62,7 @@ oktaSignIn.renderEl(
       if (res.type === 'SESSION_STEP_UP' && res.stepUp) {
           console.log('Target resource url: ' + res.stepUp.url);
           res.stepUp.finish();
-	  res.session.setCookieAndRedirect();
+	  res.session.setCookieAndRedirect(redirectUrl);
 	      return;
       }
 	  else if (res.status === 'SUCCESS') {
