@@ -6,7 +6,7 @@
     }
 
 var orgUrl = 'https://mondiru.okta.com';
-var redirectUrl = 'https://mondiru-dev-ed.my.salesforce.com/';
+//var redirectUrl = 'https://mondiru-dev-ed.my.salesforce.com/';
 // var oktaSignIn = new OktaSignIn({baseUrl: orgUrl});
 var oktaSignIn = new OktaSignIn({
     baseUrl: orgUrl,
