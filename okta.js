@@ -67,7 +67,7 @@ oktaSignIn.renderEl(
       }
 	  else if (res.status === 'SUCCESS') {
           console.log('User %s successfully authenticated %o', res.user.profile.login, res.user);
-          res.session.setCookieAndRedirect(redirectUrl);
+          res.session.setCookieAndRedirect();
 }
  
 	  
