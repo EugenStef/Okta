@@ -5,7 +5,7 @@
         console.log(stateToken);
     }
 
-var orgUrl = 'https://olteanu.okta.com';
+var orgUrl = 'https://mondiru.okta.com';
 var redirectUrl = 'https://eu-gen.github.io/widget/loggedin.html';
 // var oktaSignIn = new OktaSignIn({baseUrl: orgUrl});
 var oktaSignIn = new OktaSignIn({
